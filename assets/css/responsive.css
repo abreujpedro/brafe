@@ -1,0 +1,66 @@
+@media (max-width: 1080px) {
+    .mistura-img-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .produtos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item {
+        margin-bottom: 40px;
+    }
+    .news-container{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .locais-cl{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 608px) {
+    .menu-img {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .menu-nav {
+        margin: 0;
+    }
+    .main div h1, .mistura h2, .news-left h2,  .img-container p{
+        font-size: 1.8rem;
+    }
+    .main p , .news-left p{
+        font-size: 0.8rem;
+    }
+    .news-container form input{
+        max-width: 230px;
+        display: flex;
+    }
+    .news-container form button{
+        margin-top: 10px;
+        position: inherit;
+    }
+    .menu-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-left h2 {
+
+    }
+    .footer-container{
+        flex-direction:column-reverse;
+    }
+    .footer-container img {
+        margin-bottom: 20px;
+    }
+    .img-container img{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .menu-nav a{
+        font-size: 0.8rem;
+    }
+}
