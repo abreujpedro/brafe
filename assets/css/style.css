@@ -28,32 +28,84 @@ body {
 .menu-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .menu-img {
     margin-left: 10px;
 }
 .menu-nav {
     margin-right: 10px;
+}
+
+.menu-nav ul {
     display: flex;
     align-items: center;
 }
+
 .menu-nav a {
     padding: 10px;
     text-decoration: none;
     color: #FFF;
     font-size: 1.125em;
+    overflow: hidden;
+    display: block;
+    position: relative;
 }
+
+.menu-nav a::before{
+    content: "";
+    width: 30px;
+    position: absolute;
+    border-bottom: 2px solid #fff;
+    right: 350px;
+    bottom: 0;
+    transition: 0.6s all;
+}
+
+.menu-nav a:hover::before{
+    right: 0;
+}
+
 .menu-nav li {
     display: inline-block;
 }
 .menu-nav li:hover{
     text-decoration: underline;
 }
+
+.mobile-content{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.btn-mobile{
+    width: 30px;
+    height: 3px;
+    cursor: pointer;
+    border-top: 3px solid #FFF;
+    margin: 7px auto;
+    transition: 0.4s;
+}
+
+.btn-mobile::after ,.btn-mobile::before{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 30px;
+    background:#FFF;
+    margin-top: 7px;
+    transition: .4s;
+
+}
+
 /*main*/
 .main {
     background: url(../img/bg-intro.jpg) no-repeat center center;
     background-size: cover;
-    padding: 150px;
+    padding: 150px 0;
 }
 .main div {
     display: flex;
@@ -292,7 +344,7 @@ body {
 .scroll-top{
     opacity: 0;
     position: fixed;
-    top: 85vh;
+    top: 80vh;
     transition: 4s;
 }
 .scroll-top.ativo{
@@ -301,7 +353,7 @@ body {
     width: 70px;
     height: 70px;
     right: 30px;
-    top: 90vh; 
+    top: 85vh; 
     position: fixed;
     display: flex;
     align-items: center;
@@ -312,6 +364,7 @@ body {
     border-radius: 50%;
     transition: 1s;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+    user-select: none;
 }
 
 .scroll-top.ativo:hover{
@@ -349,7 +402,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 200;
+    z-index: 2000;
     top: 0;
     display: flex;
     align-items: center;
