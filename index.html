@@ -14,10 +14,10 @@
             </div>
             <nav class="menu-nav">
                 <ul>
-                    <a href="#"><li>Sobre</li></a>
-                    <a href="#"><li>Produtos</li></a>
-                    <a href="#"><li>Portifólio</li></a>
-                    <a href="#"><li>Contato</li></a>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#portifolio">Portifólio</a></li>
+                    <li><a href="#locais">Locais</a></li>
+                    <li><a href="" class="contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,13 +25,13 @@
     <section class="main">
 
         <div>
-            <h1>CAFÉS COM A CARA <br> DO BRASIL</h1>
-            <p>Direto das fazendas de Minas Gerais</p>
+            <h1 data-type="h1">CAFÉS COM A CARA <br> DO BRASIL</h1>
+            <p data-type="p">Direto das fazendas de Minas Gerais</p>
         </div>
 
     </section>
 
-    <section class="mistura">
+    <section class="mistura" id="produtos" data-anim="left">
 
         <h2 class="mistura-h2">Uma Mistura de</h2>
         <div class="mistura-img-container container">
@@ -49,9 +49,9 @@
         </div>
     </section>
 
-    <section class="produtos">
+    <section class="produtos" id="portifolio" >
 
-        <div class="produtos-container container">
+        <div class="produtos-container container" data-anim="right">
             <div class="produtos-item1 item">
                 <h2>Paulista</h2>
                 <p>O café foi plantado no oeste do estado de São Paulo, nos lugares mais altos, os espigões, divisores das bacias dos rios que desembocam no rio Paraná, 
@@ -70,11 +70,11 @@
 
         </div>
 
-        <a href="#" class="produtos-bt">saiba mais</a>
+        <a href="#" class="produtos-bt" data-anim="right">saiba mais</a>
 
     </section>
 
-    <section class="locais">
+    <section class="locais" id="locais" data-anim="left">
 
         <div class="locais-container container">
             <div class="locais-cl">
@@ -119,16 +119,37 @@
         </div>
 
     </section>
+    
+    <aside class="scroll-top" data-top>
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+    </aside>
 
     <footer class="footer">
         <div class="footer-container container">
             <div>
-                <p>Este é um projeto de João Pedro <br> Araçatuba SP</p>
+                <p>Este é um projeto de João Pedro</p>
+                <div>
+
+                </div>
             </div>
             <div>
                 <img src="assets/img/brafe.png" alt="">
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-grid">
+                <a href="https://www.linkedin.com/in/joao-pedro-della-bianca" target="_blank"><img src="assets/img/linkedin.svg" alt="linkeDin"></a>
+                <a href="https://github.com/abreujpedro" target="_blank"><img src="assets/img/github.svg" alt="github"></a>
+                <div class="fechar">
+                    <div class="x1"></div>
+                    <div class="x2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script type="module" src="assets/js/script.js"></script>
 </html>
