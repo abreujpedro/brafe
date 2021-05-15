@@ -69,9 +69,6 @@ body {
 .menu-nav li {
     display: inline-block;
 }
-.menu-nav li:hover{
-    text-decoration: underline;
-}
 
 .mobile-content{
     height: 40px;
